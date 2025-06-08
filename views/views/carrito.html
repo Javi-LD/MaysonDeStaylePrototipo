@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabecera con logo, navegación, búsqueda y carrito -->
+    <header class="bg-white py-3 border-bottom sticky-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <a href="../index.html" class="text-decoration-none">
+              <h1 class="h3 m-0 text-primary fw-bold">
+                Mayson <span class="text-dark">De Style</span>
+              </h1>
+            </a>
+          </div>
+          <div class="col-md-5 mb-3 mb-md-0">
+            <form>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar productos..."
+                />
+                <button class="btn btn-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="d-flex justify-content-end">
+              <a
+                href="/views/inicio_De_Sesion.html"
+                class="btn btn-outline-secondary me-2"
+              >
+                <i class="bi bi-person"></i> Mi cuenta
+              </a>
+              <a href="#" class="btn btn-outline-secondary me-2">
+                <i class="bi bi-heart"></i> Favoritos
+              </a>
+              <a
+                href="carrito.html"
+                class="btn btn-primary position-relative"
+              >
+                <i class="bi bi-cart3"></i> Carrito
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Tu Carrito de Compras</h1>
+            
+            <!-- Sección de productos en el carrito -->
+            <div class="cart-container">
+                <div class="cart-header">
+                    <div class="product-info">Producto</div>
+                    <div class="product-price">Precio</div>
+                    <div class="product-quantity">Cantidad</div>
+                    <div class="product-subtotal">Subtotal</div>
+                    <div class="product-remove">Eliminar</div>
+                </div>
+                
+                <!-- Productos en el carrito -->
+                <div class="cart-items">
+                    <!-- Producto 1 -->
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/80" alt="Producto 1">
+                            </div>
+                            <div class="product-details">
+                                <h3>Smartphone XYZ</h3>
+                                <p>Color: Negro | Memoria: 128GB</p>
+                            </div>
+                        </div>
+                        <div class="product-price">$599.99</div>
+                        <div class="product-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-subtotal">$599.99</div>
+                        <div class="product-remove">
+                            <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/80" alt="Producto 2">
+                            </div>
+                            <div class="product-details">
+                                <h3>Auriculares Bluetooth</h3>
+                                <p>Color: Blanco | Tipo: In-ear</p>
+                            </div>
+                        </div>
+                        <div class="product-price">$89.99</div>
+                        <div class="product-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-subtotal">$179.98</div>
+                        <div class="product-remove">
+                            <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/80" alt="Producto 3">
+                            </div>
+                            <div class="product-details">
+                                <h3>Smartwatch Pro</h3>
+                                <p>Color: Azul | Tamaño: 44mm</p>
+                            </div>
+                        </div>
+                        <div class="product-price">$199.99</div>
+                        <div class="product-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-subtotal">$199.99</div>
+                        <div class="product-remove">
+                            <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Acciones del carrito -->
+                <div class="cart-actions">
+                    <button class="update-cart-btn">Actualizar Carrito</button>
+                    <button class="continue-shopping-btn">Seguir Comprando</button>
+                </div>
+            </div>
+            
+            <!-- Resumen del pedido -->
+            <div class="order-summary">
+                <h2>Resumen del Pedido</h2>
+                
+                <!-- Desglose de costos -->
+                <div class="cost-breakdown">
+                    <div class="cost-item">
+                        <span>Subtotal</span>
+                        <span>$979.96</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Descuento</span>
+                        <span>-$0.00</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Gastos de envío</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="cost-item total">
+                        <span>Total</span>
+                        <span>$989.96</span>
+                    </div>
+                </div>
+                
+                <!-- Código de descuento -->
+                <div class="discount-code">
+                    <h3>¿Tienes un código de descuento?</h3>
+                    <div class="discount-input">
+                        <input type="text" placeholder="Ingresa tu código">
+                        <button class="apply-btn">Aplicar</button>
+                    </div>
+                </div>
+                
+                <!-- Botón de checkout -->
+                <button class="checkout-btn">Continuar con el Pago</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="#">Política de Devoluciones</a></li>
+                        <li><a href="#">Política de Envíos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Métodos de Pago</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@mitienda.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Esperar a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    // Elementos del DOM
+    const cartItems = document.querySelectorAll('.cart-item');
+    const updateCartBtn = document.querySelector('.update-cart-btn');
+    const continueShoppingBtn = document.querySelector('.continue-shopping-btn');
+    const checkoutBtn = document.querySelector('.checkout-btn');
+    const applyDiscountBtn = document.querySelector('.apply-btn');
+    const discountInput = document.querySelector('.discount-input input');
+    
+    // Variables para almacenar datos del carrito
+    let cart = {
+        items: [],
+        subtotal: 0,
+        discount: 0,
+        shipping: 10.00,
+        total: 0
+    };
+    
+    // Inicializar el carrito
+    initCart();
+    
+    // Función para inicializar el carrito
+    function initCart() {
+        // Recopilar información de los productos en el carrito
+        cartItems.forEach(item => {
+            const id = Math.random().toString(36).substr(2, 9); // ID único para cada producto
+            const name = item.querySelector('.product-details h3').textContent;
+            const price = parseFloat(item.querySelector('.product-price').textContent.replace('$', ''));
+            const quantity = parseInt(item.querySelector('.quantity-input').value);
+            const subtotal = price * quantity;
+            
+            // Añadir el producto al carrito
+            cart.items.push({
+                id,
+                name,
+                price,
+                quantity,
+                subtotal
+            });
+            
+            // Actualizar el subtotal en la interfaz
+            item.querySelector('.product-subtotal').textContent = `$${subtotal.toFixed(2)}`;
+        });
+        
+        // Calcular totales
+        updateTotals();
+        
+        // Añadir event listeners a los botones de cantidad
+        setupQuantityButtons();
+        
+        // Añadir event listeners a los botones de eliminar
+        setupRemoveButtons();
+        
+        // Añadir event listeners a otros botones
+        setupOtherButtons();
+    }
+    
+    // Función para configurar los botones de cantidad
+    function setupQuantityButtons() {
+        const minusButtons = document.querySelectorAll('.minus-btn');
+        const plusButtons = document.querySelectorAll('.plus-btn');
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        
+        // Botones para disminuir cantidad
+        minusButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+                const input = quantityInputs[index];
+                let value = parseInt(input.value);
+                if (value > 1) {
+                    value--;
+                    input.value = value;
+                    updateItemQuantity(index, value);
+                }
+            });
+        });
+        
+        // Botones para aumentar cantidad
+        plusButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+                const input = quantityInputs[index];
+                let value = parseInt(input.value);
+                value++;
+                input.value = value;
+                updateItemQuantity(index, value);
+            });
+        });
+        
+        // Cambios directos en los inputs de cantidad
+        quantityInputs.forEach((input, index) => {
+            input.addEventListener('change', function() {
+                let value = parseInt(this.value);
+                if (isNaN(value) || value < 1) {
+                    value = 1;
+                    this.value = value;
+                }
+                updateItemQuantity(index, value);
+            });
+        });
+    }
+    
+    // Función para actualizar la cantidad de un producto
+    function updateItemQuantity(index, quantity) {
+        // Actualizar la cantidad en el objeto del carrito
+        cart.items[index].quantity = quantity;
+        
+        // Recalcular el subtotal del producto
+        const price = cart.items[index].price;
+        const subtotal = price * quantity;
+        cart.items[index].subtotal = subtotal;
+        
+        // Actualizar el subtotal en la interfaz
+        const subtotalElement = cartItems[index].querySelector('.product-subtotal');
+        subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+        
+        // Actualizar los totales
+        updateTotals();
+    }
+    
+    // Función para configurar los botones de eliminar
+    function setupRemoveButtons() {
+        const removeButtons = document.querySelectorAll('.remove-btn');
+        
+        removeButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+                removeItem(index);
+            });
+        });
+    }
+    
+    // Función para eliminar un producto del carrito
+    function removeItem(index) {
+        // Eliminar el elemento del DOM con animación
+        const item = cartItems[index];
+        item.style.opacity = '0';
+        item.style.height = `${item.offsetHeight}px`;
+        
+        setTimeout(() => {
+            item.style.height = '0';
+            item.style.padding = '0';
+            item.style.margin = '0';
+            item.style.overflow = 'hidden';
+            
+            setTimeout(() => {
+                // Eliminar el producto del array
+                cart.items.splice(index, 1);
+                
+                // Eliminar el elemento del DOM
+                item.remove();
+                
+                // Actualizar los totales
+                updateTotals();
+                
+                // Actualizar el contador del carrito
+                updateCartCount();
+            }, 300);
+        }, 300);
+    }
+    
+    // Función para actualizar el contador del carrito
+    function updateCartCount() {
+        const cartCount = document.querySelector('.cart-count');
+        cartCount.textContent = cart.items.length;
+    }
+    
+    // Función para configurar otros botones
+    function setupOtherButtons() {
+        // Botón de actualizar carrito
+        if (updateCartBtn) {
+            updateCartBtn.addEventListener('click', function() {
+                // Simular actualización del carrito
+                this.classList.add('loading');
+                
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                    showMessage('Carrito actualizado correctamente', 'success');
+                }, 1000);
+            });
+        }
+        
+        // Botón de continuar comprando
+        if (continueShoppingBtn) {
+            continueShoppingBtn.addEventListener('click', function() {
+                // Simular redirección a la página de productos
+                showMessage('Redirigiendo a la página de productos...', 'info');
+            });
+        }
+        
+        // Botón de checkout
+        if (checkoutBtn) {
+            checkoutBtn.addEventListener('click', function() {
+                // Simular proceso de checkout
+                this.classList.add('loading');
+                
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                    showMessage('Procesando el pago...', 'info');
+                }, 1500);
+            });
+        }
+        
+        // Botón de aplicar código de descuento
+        if (applyDiscountBtn && discountInput) {
+            applyDiscountBtn.addEventListener('click', function() {
+                applyDiscount();
+            });
+            
+            // También permitir aplicar el descuento al presionar Enter
+            discountInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    applyDiscount();
+                }
+            });
+        }
+    }
+    
+    // Función para aplicar código de descuento
+    function applyDiscount() {
+        const code = discountInput.value.trim();
+        
+        if (code === '') {
+            showMessage('Por favor, ingresa un código de descuento', 'error');
+            return;
+        }
+        
+        // Simular verificación del código
+        applyDiscountBtn.classList.add('loading');
+        
+        setTimeout(() => {
+            applyDiscountBtn.classList.remove('loading');
+            
+            // Códigos de descuento válidos (simulados)
+            const validCodes = {
+                'DESCUENTO10': 10,
+                'DESCUENTO20': 20,
+                'ENVIOGRATIS': 'shipping'
+            };
+            
+            if (validCodes[code]) {
+                if (validCodes[code] === 'shipping') {
+                    // Código para envío gratis
+                    cart.shipping = 0;
+                    showMessage('¡Envío gratis aplicado!', 'success');
+                } else {
+                    // Código para descuento porcentual
+                    const percentage = validCodes[code];
+                    cart.discount = (cart.subtotal * percentage / 100);
+                    showMessage(`¡Descuento del ${percentage}% aplicado!`, 'success');
+                }
+                
+                // Actualizar los totales
+                updateTotals();
+                
+                // Deshabilitar el input y el botón
+                discountInput.disabled = true;
+                applyDiscountBtn.disabled = true;
+            } else {
+                showMessage('Código de descuento inválido', 'error');
+            }
+        }, 1000);
+    }
+    
+    // Función para actualizar los totales
+    function updateTotals() {
+        // Calcular subtotal
+        cart.subtotal = cart.items.reduce((total, item) => total + item.subtotal, 0);
+        
+        // Calcular total
+        cart.total = cart.subtotal - cart.discount + cart.shipping;
+        
+        // Actualizar en la interfaz
+        const subtotalElement = document.querySelector('.cost-breakdown .cost-item:nth-child(1) span:last-child');
+        const discountElement = document.querySelector('.cost-breakdown .cost-item:nth-child(2) span:last-child');
+        const shippingElement = document.querySelector('.cost-breakdown .cost-item:nth-child(3) span:last-child');
+        const totalElement = document.querySelector('.cost-breakdown .cost-item.total span:last-child');
+        
+        if (subtotalElement) subtotalElement.textContent = `$${cart.subtotal.toFixed(2)}`;
+        if (discountElement) discountElement.textContent = `-$${cart.discount.toFixed(2)}`;
+        if (shippingElement) shippingElement.textContent = `$${cart.shipping.toFixed(2)}`;
+        if (totalElement) totalElement.textContent = `$${cart.total.toFixed(2)}`;
+    }
+    
+    // Función para mostrar mensajes
+    function showMessage(message, type = 'info') {
+        // Crear elemento para el mensaje
+        const messageElement = document.createElement('div');
+        messageElement.className = `message ${type}`;
+        messageElement.textContent = message;
+        
+        // Añadir estilos al mensaje
+        Object.assign(messageElement.style, {
+            position: 'fixed',
+            top: '20px',
+            right: '20px',
+            padding: '10px 20px',
+            borderRadius: '5px',
+            zIndex: '1000',
+            opacity: '0',
+            transition: 'opacity 0.3s ease-in-out'
+        });
+        
+        // Estilos según el tipo de mensaje
+        switch (type) {
+            case 'success':
+                Object.assign(messageElement.style, {
+                    backgroundColor: '#28a745',
+                    color: '#fff'
+                });
+                break;
+            case 'error':
+                Object.assign(messageElement.style, {
+                    backgroundColor: '#dc3545',
+                    color: '#fff'
+                });
+                break;
+            case 'info':
+            default:
+                Object.assign(messageElement.style, {
+                    backgroundColor: '#0d6efd',
+                    color: '#fff'
+                });
+                break;
+        }
+        
+        // Añadir el mensaje al DOM
+        document.body.appendChild(messageElement);
+        
+        // Mostrar el mensaje con animación
+        setTimeout(() => {
+            messageElement.style.opacity = '1';
+        }, 10);
+        
+        // Eliminar el mensaje después de un tiempo
+        setTimeout(() => {
+            messageElement.style.opacity = '0';
+            setTimeout(() => {
+                messageElement.remove();
+            }, 300);
+        }, 3000);
+    }
+});
+
+
+    </script>
+</body>
+</html>
+

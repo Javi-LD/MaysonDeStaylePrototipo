@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayson De Style - Tu tienda de ropa online</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Local-->
+    <link rel="stylesheet" href="views/CSS/Index.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Barra superior con información de contacto y redes sociales -->
+    <div class="topbar py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 small">
+            <span class="me-3"
+              ><i class="bi bi-telephone-fill me-1"></i>+57 312 456 78 90</span
+            >
+            <span
+              ><i class="bi bi-envelope-fill me-1"></i>
+              info@maysondestyle.com</span
+            >
+          </div>
+          <div class="col-md-6 text-md-end small">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabecera con logo, navegación, búsqueda y carrito -->
+    <header class="bg-white py-3 border-bottom sticky-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <a href="index.html" class="text-decoration-none">
+              <h1 class="h3 m-0 text-primary fw-bold">
+                Mayson <span class="text-dark">De Style</span>
+              </h1>
+            </a>
+          </div>
+          <div class="col-md-5 mb-3 mb-md-0">
+            <form>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar productos..."
+                />
+                <button class="btn btn-primary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="d-flex justify-content-end">
+              <a
+                href="/views/inicio_De_Sesion.html"
+                class="btn btn-outline-secondary me-2"
+              >
+                <i class="bi bi-person"></i> Mi cuenta
+              </a>
+              <a href="#" class="btn btn-outline-secondary me-2">
+                <i class="bi bi-heart"></i> Favoritos
+              </a>
+              <a
+                href="views/carrito.html"
+                class="btn btn-primary position-relative"
+              >
+                <i class="bi bi-cart3"></i> Carrito
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto py-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                MUJER
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                HOMBRE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                <li><a class="dropdown-item" href="#">Camisas</a></li>
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                NIÑOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bebés</a></li>
+                <li><a class="dropdown-item" href="#">Niñas</a></li>
+                <li><a class="dropdown-item" href="#">Niños</a></li>
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3" href="#">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3" href="#">NOVEDADES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3" href="#">COLECCIONES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner principal / Hero section -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Nueva Colección Primavera-Verano</h1>
+        <p class="lead mb-5">
+          Descubre las últimas tendencias en moda para esta temporada
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="btn btn-primary btn-lg px-4">Comprar Mujer</a>
+          <a href="#" class="btn btn-outline-light btn-lg px-4"
+            >Comprar Hombre</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Categorías Destacadas</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="category-card position-relative">
+              <img
+                src="views/Img/Imagen2.avif"
+                class="img-fluid w-100"
+                alt="Moda Mujer"
+              />
+              <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                <h3>Moda Mujer</h3>
+                <a href="#" class="btn btn-outline-light mt-2">Ver colección</a>
+              </div>
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card position-relative">
+              <img
+                src="views/Img/Imagen3.avif"
+                class="img-fluid w-100"
+                alt="Moda Hombre"
+              />
+              <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                <h3>Moda Hombre</h3>
+                <a href="#" class="btn btn-outline-light mt-2">Ver colección</a>
+              </div>
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+              ></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card position-relative">
+              <img
+                src="views/Img/Imagen4.avif"
+                class="img-fluid w-100"
+                alt="Accesorios"
+              />
+              <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                <h3>Accesorios</h3>
+                <a href="#" class="btn btn-outline-light mt-2">Ver colección</a>
+              </div>
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner promocional -->
+    <section class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <h3 class="mb-2">¡OFERTA ESPECIAL!</h3>
+            <p class="mb-0">
+              20% de descuento en toda la nueva colección. Usa el código:
+              <strong>VERANO20</strong>
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+            <a href="#" class="btn btn-outline-light">Comprar ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Productos Destacados</h2>
+
+        <!-- Pestañas de categorías -->
+        <ul class="nav nav-pills justify-content-center mb-5">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#nuevos"
+              >Nuevos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#populares"
+              >Populares</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#ofertas"
+              >Ofertas</a
+            >
+          </li>
+        </ul>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content">
+          <!-- Productos nuevos -->
+          <div class="tab-pane fade show active" id="nuevos">
+            <div class="row">
+              <!-- Producto 1 -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <span class="badge bg-primary badge-offer">Nuevo</span>
+                    <img
+                      src="views/Img/Imagen5.avif"
+                      class="img-producto"
+                      alt="Vestido floral"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Vestidos</p>
+                    <h5 class="card-title">Vestido floral verano</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="card-text fw-bold mb-0">39,999 $</p>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Producto 2 -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <span class="badge bg-primary badge-offer">Nuevo</span>
+                    <img
+                      src="views/Img/Imagen6.avif"
+                      class="img-producto"
+                      alt="Camisa lino"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Camisas</p>
+                    <h5 class="card-title">Camisa lino hombre</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="card-text fw-bold mb-0">29,999 $</p>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Producto 3 -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <span class="badge bg-primary badge-offer">Nuevo</span>
+                    <img
+                      src="views/Img/Imagen7.avif"
+                      class="img-producto"
+                      alt="Zapatillas"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Calzado</p>
+                    <h5 class="card-title">Zapatillas Urbanas</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="card-text fw-bold mb-0">59,999 $</p>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Producto 4 -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <span class="badge bg-primary badge-offer">Nuevo</span>
+                    <img
+                      src="views/Img/Imagen8.avif"
+                      class="img-producto"
+                      alt="Hoodie"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Hoodies</p>
+                    <h5 class="card-title">Buso De lana</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="card-text fw-bold mb-0">49,999 $</p>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Productos populares (contenido similar) -->
+          <div class="tab-pane fade" id="populares">
+            <div class="row">
+              <!-- Contenido similar al anterior pero con productos populares -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <img
+                      src="views/Img/Imagen9.avif"
+                      class="img-producto"
+                      alt="Chaqueta"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Chaquetas</p>
+                    <h5 class="card-title">Chaqueta vaquera</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="card-text fw-bold mb-0">45,999 $</p>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Más productos populares... -->
+            </div>
+          </div>
+
+          <!-- Productos en oferta (contenido similar) -->
+          <div class="tab-pane fade" id="ofertas">
+            <div class="row">
+              <!-- Contenido similar al anterior pero con productos en oferta -->
+              <div class="col-md-3 col-6 mb-4">
+                <div class="product-card h-100">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-offer">-30%</span>
+                    <img
+                      src="views/Img/Imagen10.avif"
+                      class="img-producto"
+                      alt="Pantalón"
+                    />
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex gap-2 product-actions"
+                      style="opacity: 0; transition: opacity 0.3s"
+                    >
+                      <a href="#" class="btn btn-sm btn-primary rounded-circle"
+                        ><i class="bi bi-cart-plus"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-heart"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-outline-light rounded-circle"
+                        ><i class="bi bi-eye"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text text-muted small">Pantalones</p>
+                    <h5 class="card-title">Pantalón chino</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <p class="card-text fw-bold mb-0">34,999 $</p>
+                        <p
+                          class="text-decoration-line-through text-muted small"
+                        >
+                          49,999 $
+                        </p>
+                      </div>
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Más productos en oferta... -->
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-primary px-4"
+            >Ver todos los productos</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner de colección -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="display-5 fw-bold mb-3">Colección Sostenible</h2>
+            <p class="lead mb-4">
+              Nuestra nueva línea de ropa fabricada con materiales reciclados y
+              procesos sostenibles.
+            </p>
+            <p class="mb-4">
+              Comprometidos con el medio ambiente, hemos creado una colección
+              que no solo te hace lucir bien, sino que también contribuye a un
+              futuro más sostenible.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Descubrir colección</a>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              class="img-fluid rounded"
+              alt="Colección sostenible"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Características / Ventajas -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="p-3">
+              <i class="bi bi-truck text-primary" style="font-size: 2.5rem"></i>
+              <h4 class="mt-3">Envío Gratis</h4>
+              <p class="text-muted">En pedidos superiores a 50$</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="p-3">
+              <i
+                class="bi bi-arrow-repeat text-primary"
+                style="font-size: 2.5rem"
+              ></i>
+              <h4 class="mt-3">Devolución Fácil</h4>
+              <p class="text-muted">30 días para cambios y devoluciones</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="p-3">
+              <i
+                class="bi bi-shield-check text-primary"
+                style="font-size: 2.5rem"
+              ></i>
+              <h4 class="mt-3">Pago Seguro</h4>
+              <p class="text-muted">Transacciones 100% seguras</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <i
+                class="bi bi-headset text-primary"
+                style="font-size: 2.5rem"
+              ></i>
+              <h4 class="mt-3">Atención 24/7</h4>
+              <p class="text-muted">Soporte disponible todo el día</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-card h-100">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4">
+                "La calidad de la ropa es excepcional. He comprado varias
+                prendas y todas han superado mis expectativas. El servicio de
+                entrega también es muy rápido."
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Cliente"
+                />
+                <div>
+                  <h5 class="mb-0">Laura Martínez</h5>
+                  <p class="text-muted small mb-0">Cliente desde 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-card h-100">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p class="mb-4">
+                "Me encanta la variedad de estilos que ofrecen. Siempre
+                encuentro algo que se adapta a mi gusto. El proceso de compra es
+                muy sencillo y la entrega puntual."
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Cliente"
+                />
+                <div>
+                  <h5 class="mb-0">Carlos Rodríguez</h5>
+                  <p class="text-muted small mb-0">Cliente desde 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-card h-100">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4">
+                "El servicio al cliente es excelente. Tuve un problema con un
+                pedido y lo resolvieron de inmediato. La ropa es de gran calidad
+                y los precios son muy competitivos."
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Cliente"
+                />
+                <div>
+                  <h5 class="mb-0">Ana García</h5>
+                  <p class="text-muted small mb-0">Cliente desde 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          Síguenos en Instagram
+          <a href="#" class="text-decoration-none">@maysondestyle</a>
+        </h2>
+        <div class="row g-2">
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-4">
+            <a href="#" class="d-block position-relative instagram-item">
+              <img
+                src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                class="img-fluid"
+                alt="Instagram"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s"
+              >
+                <i
+                  class="bi bi-instagram text-white"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="mb-3">Suscríbete a nuestra proxima coleccion</h2>
+            <p class="text-muted mb-4">
+              Recibe las últimas novedades, tendencias y ofertas exclusivas
+              directamente en tu correo.
+            </p>
+            <form class="row g-3 justify-content-center">
+              <div class="col-md-8">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Tu correo electrónico"
+                />
+              </div>
+              <div class="col-md-auto">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="mb-4 text-primary">Mayson De Style</h5>
+            <p class="text-muted">
+              Tu tienda de moda online con las últimas tendencias en ropa y
+              accesorios para mujer, hombre y niños.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#" class="text-dark me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-dark me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-dark me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-dark me-2"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+              <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h5 class="mb-4">Comprar</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#" class="text-muted">Mujer</a></li>
+              <li class="mb-2"><a href="#" class="text-muted">Hombre</a></li>
+              <li class="mb-2"><a href="#" class="text-muted">Niños</a></li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Accesorios</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-muted">Ofertas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h5 class="mb-4">Mi cuenta</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2">
+                <a href="#" class="text-muted">Iniciar sesión</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Registrarse</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Mis pedidos</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Mi lista de deseos</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-muted">Ayuda</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h5 class="mb-4">Información</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2">
+                <a href="#" class="text-muted">Sobre nosotros</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-muted">Tiendas</a></li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Sostenibilidad</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted">Trabaja con nosotros</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-muted">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-4">Contacto</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt me-2"></i> Calle Gran Vía 123, Bogota
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone me-2"></i> +57 312 456 78 90
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i> info@maysondestyle.com
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-clock me-2"></i> Lun - Vie: 9:00 - 20:00
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="small text-muted mb-0">
+              &copy; 2025 ModaStyle. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+            <img
+              src="views/Img/Imagen11.avif"
+              alt="Métodos de pago"
+              class="img-fluid"
+              style="max-width: 300px"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a
+      href=""
+      class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4"
+      style="
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      "
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script>
+      // Mostrar/ocultar botón de volver arriba
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.querySelector(
+            ".btn-primary.rounded-circle.position-fixed"
+          ).style.display = "flex";
+        } else {
+          document.querySelector(
+            ".btn-primary.rounded-circle.position-fixed"
+          ).style.display = "none";
+        }
+      };
+
+      // Mostrar acciones de producto al pasar el ratón
+      document.querySelectorAll(".product-card").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          const actions = card.querySelector(".product-actions");
+          if (actions) actions.style.opacity = "1";
+        });
+
+        card.addEventListener("mouseleave", () => {
+          const actions = card.querySelector(".product-actions");
+          if (actions) actions.style.opacity = "0";
+        });
+      });
+
+      // Efecto hover para elementos de Instagram
+      document.querySelectorAll(".instagram-item").forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          item
+            .querySelector(".opacity-0")
+            .classList.replace("opacity-0", "opacity-75");
+        });
+
+        item.addEventListener("mouseleave", () => {
+          item
+            .querySelector(".opacity-75")
+            .classList.replace("opacity-75", "opacity-0");
+        });
+      });
+    </script>
+  </body>
+</html>

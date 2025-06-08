@@ -1,0 +1,153 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Img/Imagen1.avif");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+}
+
+.category-card {
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  transition: transform 0.5s;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card {
+  transition: all 0.3s;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge-offer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.newsletter-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #0d6efd;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar {
+    color: white;
+    animation: backgroundShift 10s infinite alternate;
+    transition: background-color 1s ease;
+}
+
+.topbar a {
+    color: white;
+    transition: color 0.5s ease;
+}
+
+@keyframes backgroundShift {
+    0%   { background-color: #0080ff; }   /* Azul */
+    50%  { background-color: #6c757d; }   /* Gris medio */
+    100% { background-color: #0d6efd; }   /* Azul */
+}
+
+.category-card img {
+    height: 500px; /* Ajusta este valor según el diseño que quieras */
+    object-fit: cover;
+}
+
+.nav-item{
+  margin: 5px;
+}
+
+.img-producto {
+    width: 100%;       /* Para que ocupe todo el ancho del contenedor */
+    height: 350px;     /* Altura fija: ajusta según necesidad */
+    object-fit: cover; /* Corta la imagen si es necesario sin deformarla */
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
